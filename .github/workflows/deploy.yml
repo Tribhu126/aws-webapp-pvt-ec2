@@ -1,4 +1,4 @@
-name: Deploy to EC2 via Bastion
+name: Deploy
 
 on:
   push:
@@ -9,14 +9,12 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Deploy through bastion to both private instances
+      - name: Deploy via bastion
         uses: appleboy/ssh-action@v0.1.10
         with:
-          host: ${{ secrets.BASTION_IP }}
+          host: ${{ secrets.PRIVATE_IP_1 }}
           username: ec2-user
           key: ${{ secrets.EC2_KEY }}
-          port: 22
-          debug: true
           script: |
-            ssh -o StrictHostKeyChecking=no ec2-user@${{ secrets.PRIVATE_IP_1 }} 'bash ~/aws-webapp-pvt-ec2/deploy.sh'
-            ssh -o StrictHostKeyChecking=no ec2-user@${{ secrets.PRIVATE_IP_2 }} 'bash ~/aws-webapp-pvt-ec2/deploy.sh'
+            ssh -o StrictHostKeyChecking=no -J ec2-user@${{ secrets.BASTION_IP }} ec2-user@${{ secrets.PRIVATE_IP_1 }} 'bash ~/aws-webapp-pvt-ec2/deploy.sh'
+            ssh -o StrictHostKeyChecking=no -J ec2-user@${{ secrets.BASTION_IP }} ec2-user@${{ secrets.PRIVATE_IP_2 }} 'bash ~/aws-webapp-pvt-ec2/deploy.sh'
