@@ -19,6 +19,7 @@ It showcases how to design a **fault-tolerant, stateless system** using load bal
 ## 🧱 Architecture
 
 ![Architecture](architecture_3-tier_webapp.png)
+> High-level architecture of a scalable, secure, and stateless AWS web application using ALB, Auto Scaling, and private subnets.
 
 ---
 
@@ -27,7 +28,6 @@ It showcases how to design a **fault-tolerant, stateless system** using load bal
 The system follows a **3-tier architecture pattern**:
 
 Internet → Route 53 → ALB → Auto Scaling Group → EC2 (Private)
-
 
 ---
 
