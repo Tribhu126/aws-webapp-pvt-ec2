@@ -294,6 +294,6 @@ Aspiring Solutions Consultant / Pre-Sales Engineer
 
 ---
 
-##  Portfolio Preview
+##  Webapp Preview
 
 ![3-tier Webapp Screenshot](aws_3-tier_webapp_screenshot.png)
