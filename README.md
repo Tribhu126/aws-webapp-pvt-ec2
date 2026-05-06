@@ -19,7 +19,7 @@ It showcases how to design a **fault-tolerant, stateless system** using load bal
 ## 🧱 Architecture
 
 ![Architecture](architecture_scalable_webapp.png)
-> High-level architecture of a scalable, secure, highlyavailable and stateless AWS web application using ALB, Auto Scaling, and private subnets.
+> High-level architecture of a scalable, secure, highly available and stateless AWS web application using ALB, Auto Scaling, and private subnets.
 
 ---
 
