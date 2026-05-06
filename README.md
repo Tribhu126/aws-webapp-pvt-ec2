@@ -286,8 +286,8 @@ aws-webapp-pvt-ec2/
 
 ---
 
-👤 Author
+## 👤 Author
 
 Tribhuvan Sharma
-AWS Certified Solutions Architect
-Aspiring Solutions Consultant / Pre-Sales Engineer
+* AWS Certified Solutions Architect
+* Aspiring Solutions Consultant / Pre-Sales Engineer
