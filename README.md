@@ -1,4 +1,4 @@
-# 🚀 AWS Scalable Web Application (3-Tier Architecture)
+# 🚀 AWS Scalable Web Application
 
 ---
 
@@ -18,16 +18,8 @@ It showcases how to design a **fault-tolerant, stateless system** using load bal
 
 ## 🧱 Architecture
 
-![Architecture](architecture_3-tier_webapp.png)
+![Architecture](architecture_scalable_webapp.png)
 > High-level architecture of a scalable, secure, and stateless AWS web application using ALB, Auto Scaling, and private subnets.
-
----
-
-## 🧠 Architecture Summary
-
-The system follows a **3-tier architecture pattern**:
-
-Internet → Route 53 → ALB → Auto Scaling Group → EC2 (Private)
 
 ---
 
@@ -296,4 +288,4 @@ Aspiring Solutions Consultant / Pre-Sales Engineer
 
 ##  Webapp Preview
 
-![3-tier Webapp Screenshot](aws_3-tier_webapp_screenshot.png)
+![Scalable Webapp Screenshot](aws_scalable_webapp_screenshot.png)
