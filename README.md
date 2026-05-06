@@ -4,7 +4,7 @@
 
 ## 📌 Overview
 
-This project demonstrates a **production-style, scalable, and secure web application architecture on AWS**.
+This project demonstrates a **production-style, scalable, highly available and secure web application architecture on AWS**.
 
 It showcases how to design a **fault-tolerant, stateless system** using load balancing, auto scaling, private networking, and modern deployment practices — eliminating manual SSH-based deployments.
 
@@ -19,7 +19,7 @@ It showcases how to design a **fault-tolerant, stateless system** using load bal
 ## 🧱 Architecture
 
 ![Architecture](architecture_scalable_webapp.png)
-> High-level architecture of a scalable, secure, and stateless AWS web application using ALB, Auto Scaling, and private subnets.
+> High-level architecture of a scalable, secure, highlyavailable and stateless AWS web application using ALB, Auto Scaling, and private subnets.
 
 ---
 
