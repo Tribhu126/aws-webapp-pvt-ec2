@@ -291,3 +291,9 @@ aws-webapp-pvt-ec2/
 Tribhuvan Sharma  
 AWS Certified Solutions Architect  
 Aspiring Solutions Consultant / Pre-Sales Engineer
+
+---
+
+##  Portfolio Preview
+
+![3-tier Webapp Screenshot](aws_3-tier_webapp_screenshot.png)
