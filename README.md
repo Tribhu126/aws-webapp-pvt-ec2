@@ -211,93 +211,66 @@ for i in {1..20}; do curl -s https://app.tribhuvansharma.com; done
 
 🔹 Result
 
-
 Consistent response across all instances:
-
 
 Hello from CI/CD
 
+---
+
 🔹 Security Validation
-TestResultDirect EC2 access❌ BlockedSSH access❌ DisabledALB access✅ AllowedSSM access✅ Allowed
+Test	Result
+Direct EC2 access	❌ Blocked
+SSH access	❌ Disabled
+ALB access	✅ Allowed
+SSM access	✅ Allowed
+
+---
 
 💰 Cost Optimization
-
-
 Removed bastion host
-
-
 Auto scaling prevents over-provisioning
-
-
 Efficient resource usage via stateless design
 
-
+---
 
 🧠 Key Learnings
-
-
 Designing scalable AWS architectures
-
-
 Implementing stateless infrastructure
-
-
 Replacing SSH with SSM
-
-
-Auto scaling with CloudWatch
-
-
+Auto scaling using CloudWatch metrics
 Debugging multi-instance inconsistencies
-
-
 Applying least-privilege security
 
-
+---
 
 ⚠️ Challenges Faced
-
-
-Port conflicts (multiple Node processes)
-
-
+Port conflicts from multiple Node processes
 Inconsistent responses across instances
-
-
 SSH-based deployment limitations
-
-
 Security group misconfigurations
-
-
 Load balancer routing issues
+Transitioning to stateless architecture
 
-
-Transition to stateless architecture
-
-
+---
 
 🚀 Future Improvements
-
-
-Blue/Green deployments
-
-
+Blue/Green deployment strategy
 Docker + ECS/Fargate
-
-
-Terraform (Infrastructure as Code)
-
-
+Infrastructure as Code (Terraform)
 Advanced monitoring dashboards
+CI/CD pipeline without SSH
 
-
-CI/CD pipeline (without SSH)
-
-
+---
 
 📂 Project Structure
-aws-webapp-pvt-ec2/│├── app.js├── deploy.sh├── architecture.png├── README.md
+aws-webapp-pvt-ec2/
+│
+├── app.js
+├── deploy.sh
+├── architecture.png
+├── README.md
+
+---
 
 👤 Author
 Tribhuvan Sharma
