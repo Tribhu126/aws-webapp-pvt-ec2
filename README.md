@@ -18,7 +18,7 @@ It showcases how to design a **fault-tolerant, stateless system** using load bal
 
 ## 🧱 Architecture
 
-![Architecture](architecture.png)
+![Architecture](architecture_3-tier_webapp.png)
 
 ---
 
