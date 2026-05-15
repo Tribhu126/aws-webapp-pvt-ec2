@@ -306,7 +306,7 @@ The application successfully retrieved EC2 metadata using IMDSv2 token-based aut
 
 ---
 
-# Immutable Deployment Architecture
+## ♻️ Immutable Deployment ArchitectureImmutable Deployment Architecture
 
 The project evolved from an earlier SSH/bastion-based deployment model into a fully stateless infrastructure design.
 
@@ -328,7 +328,7 @@ This approach follows modern cloud infrastructure best practices often referred 
 
 ---
 
-# EC2 Metadata Security (IMDSv2)
+## 🔐 EC2 Metadata Security (IMDSv2)
 
 The application retrieves live EC2 instance metadata such as:
 
