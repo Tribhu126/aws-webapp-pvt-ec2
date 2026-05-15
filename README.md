@@ -47,7 +47,7 @@ The infrastructure uses a stateless deployment model where new EC2 instances aut
 
 ---
 
-# Features
+## ✨ Features
 
 * Highly available AWS web application architecture
 * Application Load Balancer distributing traffic across multiple EC2 instances
