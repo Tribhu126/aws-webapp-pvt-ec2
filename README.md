@@ -227,7 +227,7 @@ Each EC2 instance on launch:
 
 ---
 
-### 🔹 Load Test
+### 🔹 Load & Routing Test
 
 ```bash
 for i in {1..20}; do curl -s https://app.tribhuvansharma.com; done
@@ -235,13 +235,55 @@ for i in {1..20}; do curl -s https://app.tribhuvansharma.com; done
 
 ---
 
-### 🔹 Result
+### 🔹 Validation Goals
 
-Consistent response across all instances:
+The test was used to validate:
 
+* Application Load Balancer traffic distribution
+* Auto Scaling Group instance availability
+* Stateless application behavior
+* Dynamic EC2 metadata retrieval
+* Immutable deployment consistency across instances
+
+---
+
+### 🔹 Observed Behavior
+
+Repeated requests returned dynamically changing infrastructure metadata depending on which EC2 instance served the request.
+
+Validated fields included:
+
+* EC2 Instance ID
+* Availability Zone
+* Hostname
+
+Example observations:
+
+```text
+Instance ID:
+i-xxxxxxxxxxxxx
+
+Availability Zone:
+eu-central-1a
 ```
-Hello from CI/CD
+
+and
+
+```text
+Instance ID:
+i-yyyyyyyyyyyyy
+
+Availability Zone:
+eu-central-1b
 ```
+
+This demonstrated successful ALB request routing across multiple Auto Scaling Group instances while maintaining consistent application behavior.
+
+---
+
+### 🔹 IMDSv2 Validation
+
+The application successfully retrieved EC2 metadata using IMDSv2 token-based authentication, validating secure metadata access configuration on dynamically provisioned EC2 instances.
 
 ---
 
