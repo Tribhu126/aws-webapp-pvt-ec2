@@ -7,15 +7,53 @@ const PORT = 3000;
 
 
 // =========================
-// Helper Function
+// IMDSv2 Token Helper
+// =========================
+async function getToken() {
+
+    try {
+
+        const response = await axios.put(
+            "http://169.254.169.254/latest/api/token",
+            null,
+            {
+                headers: {
+                    "X-aws-ec2-metadata-token-ttl-seconds": "21600"
+                },
+                timeout: 1000
+            }
+        );
+
+        return response.data;
+
+    } catch (err) {
+
+        console.error("IMDSv2 token error:", err.message);
+
+        return null;
+    }
+}
+
+
+// =========================
+// Metadata Helper Function
 // =========================
 async function getMetadata(path) {
 
     try {
 
+        const token = await getToken();
+
+        if (!token) {
+            return "Unavailable";
+        }
+
         const response = await axios.get(
             `http://169.254.169.254/latest/meta-data/${path}`,
             {
+                headers: {
+                    "X-aws-ec2-metadata-token": token
+                },
                 timeout: 1000
             }
         );
