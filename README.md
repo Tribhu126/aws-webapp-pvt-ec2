@@ -14,7 +14,7 @@ The infrastructure uses a stateless deployment model where new EC2 instances aut
 
 ---
 
-## 🌐 Live Demo       (not live now because of costs, can be made so upon request)
+## 🌐 Live Demo
 
 👉 https://app.tribhuvansharma.com       (not live now because of costs, can be made so upon request)
 
